@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+.main {
+	width:600px;
+	height: 600px;
+	background: #dddddd;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 150px;
+}
+.first {
+	width: 15px;
+	height: 15px;
+	background: #ED1628;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+		/*animation*/
+    animation-name: main1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    /*safari*/
+    -webkit-animation-name: main1;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.secound {
+	width: 15px;
+	height: 15px;
+	background: #AC80FF;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+		/*animation*/
+	 animation-name: first1;
+	 animation-duration: 4s;
+     animation-iteration-count: infinite;
+	 /*safari*/
+ 	 -webkit-animation-name: first1;
+	 -webkit-animation-duration: 4s;
+     -webkit-animation-iteration-count: infinite;
+}
+.third {
+	width: 15px;
+	height: 15px;
+	background: #008DF9;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+		/*animation*/
+	animation-name: first2;
+	animation-duration: 4s;
+    animation-iteration-count: infinite;
+    	 /*safari*/
+ 	 -webkit-animation-name: first2;
+	 -webkit-animation-duration: 4s;
+     -webkit-animation-iteration-count: infinite;
+}
+.fourth{
+	width: 15px;
+	height: 15px;
+	background: #77CE2B;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+		/*animation*/
+	animation-name: first3;
+	animation-duration: 4s;
+    animation-iteration-count: infinite;
+        	 /*safari*/
+ 	 -webkit-animation-name: first3;
+	 -webkit-animation-duration: 4s;
+     -webkit-animation-iteration-count: infinite;
+}
+.fifth{
+	width: 15px;
+	height: 15px;
+	background: #FF9800;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+		/*animation*/
+	animation-name: first4;
+	animation-duration: 4s;
+    animation-iteration-count: infinite;
+            	 /*safari*/
+ 	 -webkit-animation-name: first4;
+	 -webkit-animation-duration: 4s;
+     -webkit-animation-iteration-count: infinite;
+}
+@keyframes main1{
+    0%   {width: 15px;height: 15px;border-radius: 50%;}
+    50%  {width: 250px;height: 250px;border-radius: 50%;}
+    100%  {width: 15px;height: 15px;border-radius: 50%;}
+}
+@-webkit-keyframes main1{
+    0%   {width: 15px;height: 15px;border-radius: 50%;}
+    50%  {width: 250px;height: 250px;border-radius: 50%;}
+    100%  {width: 15px;height: 15px;border-radius: 50%;}
+}
+
+/*safari*/
+
+
+@keyframes first1 {
+    0%   {left:0px; top:0px;}
+    50%  {left:50%; top:50%; transform: translate(-50%,-50%); width: 150px; height: 150px; border-radius: 50%;}
+    100%  {left:0; top:0;}
+}
+/*safari*/
+@-webkit-keyframes first1 {
+    0%   {left:0px; top:0px;}
+    50%  {left:50%; top:50%; transform: translate(-50%,-50%); width: 150px; height: 150px; border-radius: 50%;}
+    100%  {left:0; top:0;}
+}
+/*safari*/
+
+@keyframes first2 {
+    0%   {right:0px; top:0px;}
+    50%  {right:50%; top:50%; transform: translate(50%,-50%); width: 150px; height: 150px; border-radius: 50%;}
+    100%  {right:0; top:0;}
+}
+/*safari*/
+@-webkit-keyframes first2 {
+    0%   {right:0px; top:0px;}
+    50%  {right:50%; top:50%; transform: translate(50%,-50%); width: 150px; height: 150px; border-radius: 50%;}
+    100%  {right:0; top:0;}
+}
+/*safari*/
+@keyframes first3 {
+    0%   {left:0px; bottom:0px;}
+    50%  {left:50%; bottom:50%; transform: translate(-50%,50%); width: 150px; height: 150px; border-radius: 50%;}
+    100%  {left:0; bottom:0;}
+}
+/*safari*/
+@-webkit-keyframes first3 {
+    0%   {left:0px; bottom:0px;}
+    50%  {left:50%; bottom:50%; transform: translate(-50%,50%); width: 150px; height: 150px; border-radius: 50%;}
+    100%  {left:0; bottom:0;}
+}
+/*safari*/
+@keyframes first4 {
+    0%   {right:0px; bottom:0px;}
+    50%  {right:50%; bottom:50%; transform: translate(50%,50%); width: 150px; height: 150px; border-radius: 50%;}
+    100%  {right:0; bottom:0;}
+}
+/*safari*/
+@-webkit-keyframes first4 {
+    0%   {right:0px; bottom:0px;}
+    50%  {right:50%; bottom:50%; transform: translate(50%,50%); width: 150px; height: 150px; border-radius: 50%;}
+    100%  {right:0; bottom:0;}
+}
+/*safari*/
